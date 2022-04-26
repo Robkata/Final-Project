@@ -24,14 +24,16 @@ namespace ExpressTaxi.Controllers
         private readonly ITaxiService _taxiService;
         private readonly IBrandService _brandService;
         private readonly IDriverService _driverService;
+        private readonly IOptionService _optionService;
         private readonly IWebHostEnvironment _hostEnvironment;
 
 
-        public TaxiController(ITaxiService taxiService, IBrandService brandService, IDriverService driverService, IWebHostEnvironment hostEnvironment)
+        public TaxiController(ITaxiService taxiService, IBrandService brandService, IDriverService driverService, IOptionService optionService, IWebHostEnvironment hostEnvironment)
         {
             this._taxiService = taxiService;
             this._brandService = brandService;
             this._driverService = driverService;
+            this._optionService = optionService;
             this._hostEnvironment = hostEnvironment;
         }
 

@@ -1,21 +1,35 @@
 ﻿@model ExpressTaxi.Models.Reservation.ReservationCreateBindingModel
+@using ExpressTaxi.Domain
 
 <form asp-controller="Reservations" asp-action="Create" method="post">
     <div class="d-flex align-items-center">
 
 
         @*TO DO - избор на опции*@
-        @*<label class="font-weight-bold text-left mr-1" asp-for="OptionId">Options:</label>
-                <div class="mr-1">
-                    <select asp-for="OptionId" class="form-control">
-                        @foreach (var option in Model.Options)
-                        {
-            <option value=" @option.Id">@option.Name</option>
-        }
-                    </select>
-                    <span asp-validation-for="OptionId"
-                          class="text-danger"></span>
-                </div>*@
+
+
+        @*<label asp-for="OptionId" class="control-label">Options:</label>
+        <div class="mr-1">
+            <select asp-for="OptionId" class="form-control">
+                @foreach (var option in Model.Options)
+                {
+                    <option value=" @option.Id">@option.Name</option>
+                }
+            </select>
+            <span asp-validation-for="OptionId" class="text-danger"></span>
+        </div>*@
+
+
+        @*<div class="form-group">
+            <label asp-for="OptionId" class="control-label">Options:</label>
+            <select asp-for="OptionId" class="form-control">
+                @foreach (var option in Model.Options)
+                {
+                    <option value=" @option.Id">@option.Name</option>
+                }
+            </select>
+            <span asp-validation-for="OptionId" class="text-danger"></span>
+        </div>*@
 
 
 

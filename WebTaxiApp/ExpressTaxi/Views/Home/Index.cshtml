@@ -20,13 +20,13 @@
                             {
                                 <h1>Добре дошъл в сайта на ExpressTaxi, @User.Identity.Name.</h1>
                                 <p>Като потребител с акаунт в нашият уеб сайт, Вие можете максимално да се възползвате от услугите, които Ви предлагаме. За тази цел можете да научите повече за нас, като последвате линка от бутона по-долу.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#" role="button">За нас</a></p>
+                                <p><a class="btn btn-lg btn-primary" asp-controller="AboutUs" asp-action="Index" role="button">За нас</a></p>
                             }
                             else
                             {
                                 <h1>Добре дошли в сайта на ExpressTaxi .</h1>
                                 <p>За да се ползвате максимално от нашите услуги, най-любезно Ви молим да си създадете акаунт или ако притежавате вече такъв, да влезнете в него.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Регистрирай се</a></p>
+                                <p><a class="btn btn-lg btn-primary" asp-area="Identity" asp-page="/Account/Register" role="button">Регистрирай се</a></p>
                             }
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                         <div class="carousel-caption">
                             <h1>Поръчай бързо и лесно такси от ExpressTaxi.</h1>
                             <p>Чрез нашият уеб сайт Вие можете бързо и лесно да поръчате такси, като само при нас имате опцията да изберете измежду всички коли, с които компанията разполага, разбира се, стига да са свободни.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Научете повече</a></p>
+                            <p><a class="btn btn-lg btn-primary" asp-controller="Taxi" asp-action="All" role="button">Научете повече</a></p>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                         <div class="carousel-caption text-right">
                             <h1>Имате загубени вещи?</h1>
                             <p>Ако Ваши лични вещи са загубени и смятате, че са забравени в наш автомобил, то не се колебайте да се свържете с нас и да си ги потърсите обратно.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Повече за нашата политика за загубени вещи</a></p>
+                            <p><a class="btn btn-lg btn-primary" asp-controller="LostProperty" asp-action="Index" role="button">Повече за нашата политика за загубени вещи</a></p>
                         </div>
                     </div>
                 </div>
@@ -94,40 +94,7 @@
 
             <hr class="featurette-divider">
             <div class="alert alert-primary" role="alert">
-                Защо си заслужава да използвате услугите на Експрес Такси
-            </div>
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                </div>
+                Защо си заслужава да използвате услугите на Експрес Такси - научете повече за нас <a asp-controller="AboutUs" asp-action="Index">тук</a>
             </div>
 
             <hr class="featurette-divider">

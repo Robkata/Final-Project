@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExpressTaxi.Models.Option;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -8,6 +9,10 @@ namespace ExpressTaxi.Models.Taxi
 {
     public class TaxiAllVM
     {
+        public TaxiAllVM()
+        {
+            Options = new List<OptionPairVM>();
+        }
         public int Id { get; set; }
         [Display(Name = "Taxi")]
         public int TaxiId { get; set; }
@@ -26,5 +31,6 @@ namespace ExpressTaxi.Models.Taxi
         [Display(Name = "Driver")]
         public int DriverId { get; set; }
         public string Driver { get; set; }
+        public virtual List<OptionPairVM> Options { get; set; }
     }
 }

@@ -36,6 +36,8 @@ namespace ExpressTaxi.Controllers
                 var user = this.context.Users.SingleOrDefault(u => u.Id == userId);
                 var ev = this.context.Taxies.SingleOrDefault(e => e.Id == bindingModel.TaxiId);
 
+                
+
                 if (user == null || ev == null)
                 {
 
@@ -55,6 +57,14 @@ namespace ExpressTaxi.Controllers
                     Status = "Успешна",
                     OptionId = bindingModel.OptionId ,
                 };
+
+                //var options = _optionService.GetOptions()
+                //  .Select(c => new OptionPairVM()
+                //  {
+                //      Id = c.Id,
+                //      Name = c.Name
+                //  })
+                //  .ToList();
 
                 this.context.Taxies.Update(ev);
                 this.context.Reservations.Add(orderForDb);

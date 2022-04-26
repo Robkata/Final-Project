@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Загубени вещи";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .jumbotron {
+            background-color: #f4511e;
+            color: #fff;
+            padding: 100px 25px;
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+            border-width: 1px;
+            border-color: gray;
+            border-style: solid;
+        }
+
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+
+        .logo {
+            font-size: 200px;
+        }
+
+        media screen and (max-width: 768px) {
+            .col-sm-4
+
+        {
+            text-align: center;
+            margin: 25px 0;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>
+                    Забравени вещи в таксиметров автомобил
+                </h2>
+                <h4>Нашата политика за загубени вещи..</h4>
+                <p>1. Когато ползвате такси преди да слезете от автомобила, моля проверете дали не Вие изпаднало нещо.</p>
+                <p>2. Препоръчваме използването на такси от поръчка, защото бързо може да бъде извършена проверка и запитване към шофьора.</p>
+                <p>3. Когато ползвате такси без поръчка, взимайте Вашата касова бележка, тя дават ценна информация за часа и номера на автомобила.</p>
+                <p>4. Когато установите, че сте забравили Вашата вещ в наш автомобил веднага позвънете в Call center. Имайте предвид, че след Вас в автомобила ще се качи друг клиент. Бързата реакция е от изключително значение!</p>
+                <p>5. Ако сте загубили вещ, преди повече време, попълнете формата за запитване и ние скоро ще се свържем с Вас.</p>
+                <p>6. Скъпи клиенти, молим Ви, когато намерите вещ в автомобила предайте я на шофьора, за да може да бъде върната. Не я взимайте!</p>
+
+
+                <p>Загубените вещи се съхраняват един месец.</p>
+
+                <p>За да направим адекватна проверка се нуждаем от повече информация. Изпратете ни това, с което разполагате.</p>
+                <p>- Номер на телефон, ако сте направили поръчка</p>
+                <p>- От къде до къде сте пътували</p>
+                <p>- Приблизителния час на пристигане до крайната посока</p>
+                <p>- На коя седалка сте пътували</p>
+                <p>- Данни от касовата бележка</p>
+                <p>- Опишете предмета, който сте загубили</p>
+
+                <p><a asp-controller="Contacts" asp-action="Index">Свържете се с нас</a></p>
+                    <a class="navbar-dark" asp-controller="Home" asp-action="Index"><button class="btn btn-danger">Върни ме в началната страница</button></a>
+            </div>
+            <div class="col-sm-4">
+                <img width="350" height="300" src="https://play-lh.googleusercontent.com/NVmNVeortHJrOTuDyTgyHBIsH4tKIT1FTZYiYee6RrawYrP4fAtXjet1ETwytBD7yTdT" alt="alternatetext">
+            </div>
+        </div>
+    </div>
+</body>

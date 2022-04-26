@@ -21,7 +21,7 @@
 }
 <div class="col-sm-4">
     <p>
-    <img width="150" height="150" src="https://play-lh.googleusercontent.com/NVmNVeortHJrOTuDyTgyHBIsH4tKIT1FTZYiYee6RrawYrP4fAtXjet1ETwytBD7yTdT" h3="ExpressTaxi - Всички таксита на едно място "alt="alternatetext">
+        <img width="150" height="150" src="https://play-lh.googleusercontent.com/NVmNVeortHJrOTuDyTgyHBIsH4tKIT1FTZYiYee6RrawYrP4fAtXjet1ETwytBD7yTdT" h3="ExpressTaxi - Всички таксита на едно място " alt="alternatetext">
     </p>
 </div>
 @foreach (var item in Model)
@@ -45,7 +45,7 @@
                     <div class="align-items-center align-content-center col-md-3 border-left mt-1">
                         <h6 class="text-success">Свободно</h6>
                         <div class="d-flex flex-column mt-4">
-                            <button asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary btn-sm" type="button">Details</button><button asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-primary btn-sm mt-2" type="button">Edit</button><button asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-primary btn-sm mt-2" type="button">Delete</button>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary btn-sm" type="button">Details</a><a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-primary btn-sm mt-2" type="button">Edit</a><a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-primary btn-sm mt-2" type="button">Delete</a>
                         </div>
                     </div>
                     @await Html.PartialAsync("_OrderPartial", new ReservationCreateBindingModel

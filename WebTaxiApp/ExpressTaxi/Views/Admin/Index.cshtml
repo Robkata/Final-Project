@@ -18,20 +18,6 @@
                 <div class="c-header-icon js-hamburger">
                     <div class="hamburger-toggle"><span class="bar-top"></span><span class="bar-mid"></span><span class="bar-bot"></span></div>
                 </div>
-                <div class="c-header-icon has-dropdown">
-                    <span class="c-badge c-badge--header-icon animated shake">87</span><i class="fa fa-bell"></i>
-                    <div class="c-dropdown c-dropdown--notifications">
-                        <div class="c-dropdown__header"></div>
-                        <div class="c-dropdown__content"></div>
-                    </div>
-                </div>
-                <div class="c-search">
-                    <input class="c-search__input u-input" placeholder="Search..." type="text" />
-                </div>
-                <div class="header-icons-group">
-                    <div class="c-header-icon basket"><span class="c-badge c-badge--header-icon animated shake">12</span><i class="fa fa-shopping-basket"></i></div>
-                    <div class="c-header-icon logout"><i class="fa fa-power-off"></i></div>
-                </div>
             </div>
         </header>
         <div class="l-sidebar">
@@ -44,31 +30,31 @@
                         <li class="c-menu__item is-active" data-toggle="tooltip" title="Taxies">
                             <div class="c-menu__item__inner">
                                 <i class="fa fa-car"></i>
-                                <div class="c-menu-item__title"><span>Taxies</span></div>
+                                <a class="c-menu-item__title" asp-controller="Taxi" asp-action="All"><span>Taxies</span></a>
                             </div>
                         </li>
                         <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Reservations">
                             <div class="c-menu__item__inner">
                                 <i class="fa fa-print"></i>
-                                <div class="c-menu-item__title"><span>Reservations</span></div>
+                                <a class="c-menu-item__title" asp-controller="Reservations" asp-action="Index"><span>Reservations</span></a>
                             </div>
                         </li>
                         <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Statistics">
                             <div class="c-menu__item__inner">
                                 <i class="fa fa-bar-chart"></i>
-                                <div class="c-menu-item__title"><span>Statistics</span></div>
+                                <a class="c-menu-item__title" asp-controller="Admin" asp-action="Index"><span>Statistics</span></a>
                             </div>
                         </li>
                         <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Users">
                             <div class="c-menu__item__inner">
                                 <i class="fa fa-user-alt"></i>
-                                <div class="c-menu-item__title"><span>Users</span></div>
+                                <a class="c-menu-item__title" asp-controller="Client" asp-action="AllClients"><span>Users</span></a>
                             </div>
                         </li>
                         <li class="c-menu__item has-submenu" data-toggle="tooltip" title="News">
                             <div class="c-menu__item__inner">
                                 <i class="fa fa-newspaper"></i>
-                                <div class="c-menu-item__title"><span>News</span></div>
+                                <a class="c-menu-item__title" asp-controller="Home" asp-action="Index"><span>News</span></a>
                             </div>
                         </li>
                     </ul>
